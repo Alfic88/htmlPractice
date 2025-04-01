@@ -1,16 +1,18 @@
 <!doctype html>
+<!-- pokazivanje kako rade block i inline elementi-->
 <html>
 <head>
   <meta charset="utf-8">
   <title>div and span elements</title>
 </head>
 <body>
-  <div>*** DIV 1: Some content here ***</div>
-  <div>*** DIV 2: Following right after div 1 ***</div>
-  <span>*** SPAN 1: Following right after div 2 ***</span>
-  <div>
+  <div >*** DIV 1: Some content here ***</div>
+  <div style="font-size: large;">*** DIV 2: Following right after div 1 ***</div>  <!--blok element i zato posle njega ide novi red iako je <span> inline element nece se nastaviti-->
+  <span style="color: rgb(0, 255, 13);">*** SPAN 1: Following right after div 2 ***</span>
+  <div style="color: blue;"> <!-- u blok elementu mozemo da ubacimo i inline i druge block elemente, dok obrnuto ne moze-->
     *** DIV 3: Following right after span 1 
-    <span>*** SPAN 2: INSIDE div 3 ***</span>
+  <div style="color: black;">*** DIV 4: ubacujem blok element u blok </div>
+    <span style="color: red;">*** SPAN 2: INSIDE div 3 ***</span> <!-- kada se ubaci boja za div ceo teks je plav, a kada u <span> dodamo boju onda prelazi u crveno samo ta racenica u okviru tog elementa  -->
     Continue content of div 3 ***
   </div>
 </body>
