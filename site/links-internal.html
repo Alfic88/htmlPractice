@@ -1,0 +1,36 @@
+<!doctype html>
+
+<!-- povezujem ovu stranicu sa stranicom links-same-dir koja se nalazi u istom folderu-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Internal Links</title>
+</head>
+
+<body>
+    <h1>Internal Links</h1>
+    <section>
+        We can link to a file in the same directory as this HTML file like this:
+        <a href="links-same-directory.html" title="same dir link" style="color: red;">Linking to a file in the same
+            directory</a>
+        <!-- ovde se vidi da link moze da bude ceo <div> sto je pogodno kada hocemo da cela neka sekcija,logo bude link-->
+
+        <a href="links-same-directory.html" title="same dir link">
+            <!--u <div> sam stavio sliku da i ona bude za klikanje, ali posto je unutar diva onda i tekst takodje ostaje da moze da se klikne-->
+            <div>
+                <img src="https://canto-wp-media.s3.amazonaws.com/app/uploads/2019/07/19194417/insert-image-html.jpg"
+                    title="fotka za klikanje">DIV Linking to a file in the same directory
+            </div>
+        </a>
+
+        <!--fotka van <div> taga-->
+        <a href="links-same-directory.html" title="same dir link">
+
+            <img src="https://canto-wp-media.s3.amazonaws.com/app/uploads/2019/07/19194417/insert-image-html.jpg"
+                title="fotka za klikanje">
+        </a>
+    </section>
+</body>
+
+</html>

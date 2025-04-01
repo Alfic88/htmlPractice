@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<!-- rad sa tabelama -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Displaying table</title>
+</head>
+
+<body>
+<!-- tabela 3x3 -->
+    <table border="2" >
+        <tr>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Godine</th>
+
+
+        </tr>
+        <tr>
+            <td >Ana</td>
+            <td >Jovanović</td>
+            <td>28</td>
+            
+        </tr>
+        <tr>
+            <td>Marko</td>
+            <td>Petrović</td>
+            <td>34</td>
+        </tr>
+    </table>
+
+<br>
+<!-- tabela 3x3 gde se spajaju dve celije u jednoj koloni -->
+<table border="2" >
+    <tr>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Godine</th>
+
+
+    </tr>
+    <tr>
+        
+        <td rowspan="2">Ana</td>
+        <td >Jovanović</td>
+        <td>28</td>
+        
+    </tr>
+    <tr>
+        <td>Marko</td>
+        <td>Petrović</td>
+        <!-- <td>34</td> -->
+    </tr>
+</table>
+
+<br>
+
+<!-- tabela 3x3 gde se spajaju tri celije u tri razlicite kolone -->
+    <table border=" 2">
+                <thead>
+                    <tr>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Godine</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana</td>
+                        <td>Jovanović</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>Marko</td>
+                        <td>Petrović</td>
+                        <td>34</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Podaci su preuzeti iz baze</td>
+                    </tr>
+                </tfoot>
+    </table>
+
+</body>
+
+</html>
