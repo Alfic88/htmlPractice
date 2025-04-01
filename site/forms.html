@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<!--primer forme sa osnovnim elementima-->
+<head>
+    <meta charset="utf-8">
+    <title>Displaying forms</title>
+</head>
+
+<body>
+    <form action="submit.php" method="POST">
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" placeholder="Unesite ime" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Unesite email" required>
+    
+        <label for="lozinka">Lozinka:</label>
+        <input type="password" id="lozinka" name="lozinka" placeholder="Unesite lozinku" required>
+    
+        <label>
+            <input type="checkbox" name="uslovi" required> Prihvatam uslove korišćenja
+        </label>
+    
+        <input type="submit" value="Registruj se">
+        <input type="reset" value="Obriši">
+    </form>
+    
+</body>
+
+</html>
